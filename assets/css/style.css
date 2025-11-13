@@ -17,6 +17,12 @@ body {
 header{ 
     background-color: blueviolet;
 }
+
+h1 {
+    font-family: Merriweather, sans-serif;
+    font-weight: 500;
+}
+
 main {
     background-color: rgb(68, 60, 60);
     /* this makes main take up all available space */
