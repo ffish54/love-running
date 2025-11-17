@@ -32,7 +32,7 @@ header a {
 }
 
 h1 {
-    font-family: Merriweather, sans-serif;
+    font-family: "oswald", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -86,9 +86,18 @@ main {
     /* this makes main take up all available space */
     flex: 1 0 auto;
     margin-top: 47px;
+    color: white;
 
 }
 
+#hero {
+    height: 600px;
+    width: 100%;
+    background-image: url('../images/hero-image.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 #social-media {
     display: flex;
