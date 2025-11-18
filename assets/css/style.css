@@ -97,13 +97,23 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #cover-text {
     background-color: rgba(68, 60, 60, 0.5);
     font-size: 130%;
     color:#252525;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
 
+#cover-text > h2, #cover-text > h3, #cover-text > p {
+    color: #252525;
 }
 
 #social-media {
@@ -148,6 +158,11 @@ main {
 
     main {
         margin-top: 75px;
+    }
+
+    #cover-text {
+        width: 200px;
+        left: 50px;
     }
 
 
