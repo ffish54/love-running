@@ -182,6 +182,24 @@ main {
     font-size: 175%;
 }
 
+#times {
+    background-image: url('../images/dublin-city.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+}
+#times h3 {
+    color: #fafafa;
+}
 
 /*media queries for tablets 768px or up*/
 @media screen and (min-width: 768px) {
