@@ -173,6 +173,18 @@ main {
     color: #252525;
 }
 
+/*gallery styles*/
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+
+/*footer styles*/
 #social-media {
     display: flex;
     text-align: center;
