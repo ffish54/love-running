@@ -262,7 +262,7 @@ main {
 
 .join-button {
     border-radius: 2px;
-    background-color: #454b1b;
+    background-color: #3a3a3a;
     color: #fafafa;
     font-size: 100%;
     padding: 15px 32px;
@@ -346,18 +346,17 @@ main {
      
      #signup form {
         max-width: 400px;
-        positon: absolute;
         left: 10%;
         top: 150px;
      }
 
      .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
+        background-color: #5a5a5a;
+        color: #fafafa;
      }
 
      .text-input:hover {
-        border-color: #f16c6b;
+        border-color: #3a3a3a;
      }
 
 }
