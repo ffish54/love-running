@@ -1,408 +1,397 @@
-
 /* * = wild card, affects all */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /*generic styles*/
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3a3a3a;
-    font-family: lato, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+  font-family: lato, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "oswald", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 .hidden-heading {
-    display: none;
+  display: none;
 }
 
-header{ 
-    background-color: white;
-    padding: 0 1rem;
-    position:fixed;
-    z-index: 1000;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+header {
+  background-color: white;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #menu {
-    font-size:110%;
-    letter-spacing: 4px;
-    list-style: none;
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style: none;
 }
 
 #menu > li {
-    margin-bottom: 1rem;
-
+  margin-bottom: 1rem;
 }
 
-.active{
-    border-bottom: 1px solid #3a3a3a;
+.active {
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /*nav in dropdown menu*/
 nav {
-    position:absolute;
-    background-color: white;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    padding: 1rem 0;
-    left: 0;
-    display: none;
-    top:100%;
-
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  padding: 1rem 0;
+  left: 0;
+  display: none;
+  top: 100%;
 }
 
 /*nav toggle*/
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked ~ nav {
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
-    cursor: pointer;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 main {
-    background-color: rgb(68, 60, 60);
-    /* this makes main take up all available space */
-    flex: 1 0 auto;
-    margin-top: 47px;
-    color: white;
-
+  background-color: rgb(68, 60, 60);
+  /* this makes main take up all available space */
+  flex: 1 0 auto;
+  margin-top: 47px;
+  color: white;
 }
 
 #hero {
-    height: 600px;
-    width: 100%;
-    background-image: url('../images/hero-image.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+  height: 600px;
+  width: 100%;
+  background-image: url("../images/hero-image.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 #cover-text {
-    background-color: rgba(68, 60, 60, 0.5);
-    font-size: 130%;
-    color:#252525;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+  background-color: rgba(68, 60, 60, 0.5);
+  font-size: 130%;
+  color: #252525;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
 }
 
 #reasons {
-    margin: 20px auto;
-    width: 90%;
+  margin: 20px auto;
+  width: 90%;
 }
 
 #reasons h2 {
-    text-align: center;
-    text-size-adjust: 280%;
-    text-transform: bold;
-    margin-bottom: 20px;
+  text-align: center;
+  text-size-adjust: 280%;
+  text-transform: bold;
+  margin-bottom: 20px;
 }
 
 #benefits-physical > div,
 #benefits-mental > div {
-    line-height: 20px;
-    margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 #benefits {
-    margin-bottom: 0 20px;
+  margin-bottom: 0 20px;
 }
 
-#benefits  hr {
-   border-top: 1px solid #3a3a3a;
-   margin: 5px 0;
-   
+#benefits hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
 }
 
-#benefits  p {
-    padding: 0 20px;
+#benefits p {
+  padding: 0 20px;
 }
 
 #circle-cover-bg {
-    width: 90vw;
-    height: 90vw;
-    background-image: url('../images/reasons-image.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 20px;
-    /*make circle*/
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
+  width: 90vw;
+  height: 90vw;
+  background-image: url("../images/reasons-image.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 20px;
+  /*make circle*/
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #benefits-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#cover-text > h2, #cover-text > h3, #cover-text > p {
-    color: #252525;
+#cover-text > h2,
+#cover-text > h3,
+#cover-text > p {
+  color: #252525;
 }
 
 /*gallery styles*/
 #photos img {
-    width: 100%;
-    line-height: 1em;
+  width: 100%;
+  line-height: 1em;
 }
 
 #photos {
-    line-height: 0;
+  line-height: 0;
 }
-
 
 /*footer styles*/
 #social-media {
-    display: flex;
-    text-align: center;
-    padding: 20px 0;
-    justify-content: space-evenly;
-    list-style: none;
+  display: flex;
+  text-align: center;
+  padding: 20px 0;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
 #social-media i {
-    color: #3a3a3a;
-    font-size: 175%;
+  color: #3a3a3a;
+  font-size: 175%;
 }
 
 #times {
-    background-image: url('../images/dublin-city.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-wrap: wrap;
-    display: flex;
+  background-image: url("../images/dublin-city.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 #times div {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
-    padding: 15px;
-    text-align: center;
-    flex-basis: 200px;
-    flex-grow: 1;
-    border: 2px solid white;
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  flex-basis: 200px;
+  flex-grow: 1;
+  border: 2px solid white;
 }
 #times h3 {
-    color: #fafafa;
-    padding-bottom: 20px;
+  color: #fafafa;
+  padding-bottom: 20px;
 }
 
 main {
-    flex: 1 0 auto;
-    margin-top: 47px;
-    display: flex;
-    flex-direction: column;
-
+  flex: 1 0 auto;
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
 }
 
 #signup {
-    background-image: url('../images/signup-image.webp');
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
+  background-image: url("../images/signup-image.webp");
+  background-size: cover;
+  background-position: 75%;
+  padding: 20px 10% 0 10%;
+  flex-grow: 1;
 }
 
 #signup h2 {
-    color: #fafafa;
+  color: #fafafa;
 }
 
 #signup form {
-    color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.6);
-    padding: 30px;
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 30px;
 }
 
 .text-input {
-    background: transparent;
-    color: #fafafa;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    margin: 5px 0 20px 0; 
-    padding: 0 5px;
+  background: transparent;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  margin: 5px 0 20px 0;
+  padding: 0 5px;
 }
 
 .radio-buttons {
-    flex: space-between;
+  flex: space-between;
 }
 
 .join-button {
-    border-radius: 2px;
-    background-color: #3a3a3a;
-    color: #fafafa;
-    font-size: 100%;
-    padding: 15px 32px;
-    margin: 20px 0 30px 0;
+  border-radius: 2px;
+  background-color: #3a3a3a;
+  color: #fafafa;
+  font-size: 100%;
+  padding: 15px 32px;
+  margin: 20px 0 30px 0;
 }
 
-
-
-
 @media screen and (min-width: 576px) {
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 
 /*media queries for tablets 768px or up*/
 @media screen and (min-width: 768px) {
-    /*header*/
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
+  /*header*/
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
 
-   #menu {
+  #menu {
     display: flex;
     gap: 1rem;
-   }
+  }
 
-    .nav-toggle-label {
-     display: none;
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    #logo {
-        font-size: 200%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
+  #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-    main {
-        margin-top: 75px;
-    }
+  main {
+    margin-top: 75px;
+  }
 
-    #cover-text {
-        width: 200px;
-        left: 50px;
-    }
+  #cover-text {
+    width: 200px;
+    left: 50px;
+  }
 
-    #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-     #benefits-physical > div,
-    #benefits-mental > div{
-        width: 75%;
-    }
+  #benefits-physical > div,
+  #benefits-mental > div {
+    width: 75%;
+  }
 
-     #benefits-mental > div {
-        text-align: end;
-        align-self: flex-end;
-     }
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
 
-     #benefits-image {
-        align-self: center;
-     }
+  #benefits-image {
+    align-self: center;
+  }
 
-     #photos {
-        column-count: 3;
-        column-gap: 0;
-     }
+  #photos {
+    column-count: 3;
+    column-gap: 0;
+  }
 
-     #signup {
-        background-position: center;
-     }
-     
-     #signup form {
-        max-width: 400px;
-        left: 10%;
-        top: 150px;
-     }
+  #signup {
+    background-position: center;
+  }
 
-     .join-button:hover {
-        background-color: #5a5a5a;
-        color: #fafafa;
-     }
+  #signup form {
+    max-width: 400px;
+    left: 10%;
+    top: 150px;
+  }
 
-     .text-input:hover {
-        border-color: #3a3a3a;
-     }
+  .join-button:hover {
+    background-color: #5a5a5a;
+    color: #fafafa;
+  }
 
+  .text-input:hover {
+    border-color: #3a3a3a;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
+  a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
 
-    #photos {
-        column-count: 4;
-        column-gap: 0;
-    }
-    
+  #photos {
+    column-count: 4;
+    column-gap: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    #benefits {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+  #benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-        
-    }
-    
-    #benefits > div {
-        flex: 1;
-    }
+  #benefits > div {
+    flex: 1;
+  }
 
-    #benefits-image {
-        order: 0;
-        
-    }
-    #benefits-mental {
-        order: 1;
-        
-    }
+  #benefits-image {
+    order: 0;
+  }
+  #benefits-mental {
+    order: 1;
+  }
 
-    #benefits-mental > div {
-        align-self: flex-start;
-        
-    }
+  #benefits-mental > div {
+    align-self: flex-start;
+  }
 
-    #benefits-physical > div {
-        align-self: flex-end;
-        
-    }
+  #benefits-physical > div {
+    align-self: flex-end;
+  }
 }
